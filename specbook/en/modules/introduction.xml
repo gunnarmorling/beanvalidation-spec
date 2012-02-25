@@ -19,9 +19,18 @@
     <para>This work is being conducted as part of JSR 349 and formerly JSR 303
     under the Java Community Process Program. This specification is the result
     of the collaborative work of the members of the JSR 349 Expert Group and
-    the community at large. </para>
+    the community at large.</para>
 
-    <para/>
+    <para>Members of the JSR 349 expert group in alphabetical order
+    are:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>...</para>
+      </listitem>
+    </itemizedlist>
+
+    <para><remark>TODO: Add EG members</remark></para>
 
     <para>Former expert group members of JSR 303 in alphabetical order
     are:</para>
@@ -196,35 +205,38 @@
     specification in a separate chapter. One should remember that the
     specification is a consistent whole.</para>
 
-    <para><xref linkend="constraintsdefinitionimplementation"/> describes how
+    <para><xref linkend="constraintsdefinitionimplementation" /> describes how
     constraints are defined.</para>
 
-    <para><xref linkend="constraintdeclarationvalidationprocess"/> describes
+    <para><xref linkend="constraintdeclarationvalidationprocess" /> describes
     how a JavaBean class is decorated with annotations to describe
     constraints.</para>
 
-    <para><xref linkend="validationapi"/> describes how to programmatically
+    <para><xref linkend="validationapi" /> describes how to programmatically
     validate a JavaBean.</para>
 
-    <para><xref linkend="constraintmetadata"/> describes how the metadata
+    <para><xref linkend="constraintmetadata" /> describes how the metadata
     query API works.</para>
 
-    <para>In <xref linkend="terminology"/>, key concepts are summarized. Some
+    <para>In <xref linkend="terminology" />, key concepts are summarized. Some
     reviewers have found that reading the terminology section first helps to
     better understand the specification.</para>
 
     <para>JPA, JSF and EE integration are present at <xref
-    linkend="appendix-jpa"/>, <xref linkend="appendix-jsf"/> and <xref
-    linkend="appendix-ee"/> for archive purposes, one should refer to the
+    linkend="appendix-jpa" />, <xref linkend="appendix-jsf" /> and <xref
+    linkend="appendix-ee" /> for archive purposes, one should refer to the
     respective specifications for the up-to-date integration rules.</para>
 
-    <para>The changelog can be found at <xref linkend="changelog"/>.</para>
+    <para>The changelog can be found at <xref linkend="changelog" />.</para>
   </section>
 
   <section>
     <title>How to comment</title>
 
     <para>The expert group is eager to receive feedback from readers. Feel
-    free to contact us or use jsr-303-comments@jcp.org.</para>
+    free to contact us on the JSR 349 <ulink
+    url="mailto:beanvalidation-dev@lists.jboss.org">mailing list</ulink> and
+    visit our <ulink url="http://beanvalidation.org/contribute">web
+    site</ulink> to learn more on how to contribute to JSR 349.</para>
   </section>
 </chapter>
