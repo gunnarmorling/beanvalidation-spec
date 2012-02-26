@@ -21,16 +21,16 @@
     of the collaborative work of the members of the JSR 349 Expert Group and
     the community at large.</para>
 
-    <para>Members of the JSR 349 expert group in alphabetical order
-    are:</para>
+    <para revisionflag="added">Members of the JSR 349 expert group in
+    alphabetical order are:</para>
 
-    <itemizedlist>
+    <itemizedlist revisionflag="added">
       <listitem>
         <para>...</para>
       </listitem>
     </itemizedlist>
 
-    <para><remark>TODO: Add EG members</remark></para>
+    <para revisionflag="added"><remark>TODO: Add EG members</remark></para>
 
     <para>Former expert group members of JSR 303 in alphabetical order
     are:</para>
@@ -155,12 +155,13 @@
     component in other specifications. Ease of use and flexibility have
     influenced the design of this specification.</para>
 
-    <para>As of version 1.1, Bean Validation constraints can also be applied
-    to the parameters and return values of methods of arbitrary Java types.
-    That way the Bean Validation API can be used to describe and validate the
-    contract applying to a given method, that is</para>
+    <para revisionflag="added">As of version 1.1, Bean Validation constraints
+    can also be applied to the parameters and return values of methods of
+    arbitrary Java types. That way the Bean Validation API can be used to
+    describe and validate the contract applying to a given method, that
+    is</para>
 
-    <itemizedlist>
+    <itemizedlist revisionflag="added">
       <listitem>
         <para>the preconditions that must be met by the method caller before
         the method may be invoked and</para>
@@ -172,16 +173,16 @@
       </listitem>
     </itemizedlist>
 
-    <para>This enables a programming style known as "Programming by Contract"
-    (PbC). Note that it is <emphasis>not</emphasis> the goal of this
-    specification to develop a fully-fledged PbC solution but rather an
-    easy-to-use facility for fulfilling the most common needs related to
-    applying constraints to method parameters and return values, based on the
-    proven concepts of the Bean Validation API. Compared to traditional means
-    of checking the sanity of a method's argument values and its return value
-    this approach has several advantages:</para>
+    <para revisionflag="added">This enables a programming style known as
+    "Programming by Contract" (PbC). Note that it is <emphasis>not</emphasis>
+    the goal of this specification to develop a fully-fledged PbC solution but
+    rather an easy-to-use facility for fulfilling the most common needs
+    related to applying constraints to method parameters and return values,
+    based on the proven concepts of the Bean Validation API. Compared to
+    traditional means of checking the sanity of a method's argument values and
+    its return value this approach has several advantages:</para>
 
-    <itemizedlist>
+    <itemizedlist revisionflag="added">
       <listitem>
         <para>These checks are expressed declaratively and don't have to be
         performed manually, which results in less code to write, read and
@@ -233,8 +234,8 @@
   <section>
     <title>How to comment</title>
 
-    <para>The expert group is eager to receive feedback from readers. Feel
-    free to contact us on the JSR 349 <ulink
+    <para revisionflag="changed">The expert group is eager to receive feedback
+    from readers. Feel free to contact us on the JSR 349 <ulink
     url="mailto:beanvalidation-dev@lists.jboss.org">mailing list</ulink> and
     visit our <ulink url="http://beanvalidation.org/contribute">web
     site</ulink> to learn more on how to contribute to JSR 349.</para>

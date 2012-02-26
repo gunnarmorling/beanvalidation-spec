@@ -105,20 +105,22 @@
   given class, the metadata API should raise the according exception.</para>
 
   <section>
-    <title>Error report <classname>ConstraintViolationException</classname>
-    and <classname>MethodConstraintViolationException </classname></title>
+    <title revisionflag="changed">Error report
+    <classname>ConstraintViolationException</classname> and
+    <classname>MethodConstraintViolationException </classname></title>
 
-    <para>Some frameworks or applications need to convey the result of a
-    validation by raising an exception if a bean validation or method-level
-    validation returns constraint violations.</para>
+    <para revisionflag="changed">Some frameworks or applications need to
+    convey the result of a validation by raising an exception if a bean
+    validation or method-level validation returns constraint
+    violations.</para>
 
-    <para>The Bean Validation API provides two reference exceptions for such
-    cases. Frameworks and applications are encouraged to use
-    <classname>ConstraintViolationException</classname> respectively
-    <classname>MethodConstraintViolationException</classname> as opposed to
-    custom exception types to increase consistency of the Java platform. The
-    exceptions can be raised directly or wrapped into the framework or
-    application specific parent exception.</para>
+    <para revisionflag="changed">The Bean Validation API provides two
+    reference exceptions for such cases. Frameworks and applications are
+    encouraged to use <classname>ConstraintViolationException</classname>
+    respectively <classname>MethodConstraintViolationException</classname> as
+    opposed to custom exception types to increase consistency of the Java
+    platform. The exceptions can be raised directly or wrapped into the
+    framework or application specific parent exception.</para>
 
     <programlisting>/**
  * Reports the result of constraint violations
@@ -164,7 +166,7 @@ public class ConstraintViolationException extends ValidationException {
     <classname>Set</classname> of
     <classname>ConstraintViolation</classname>.</para>
 
-    <programlisting>/**
+    <programlisting revisionflag="added">/**
  * Exception class to be thrown by integrators of the Bean Validation method validation feature.
  *
  * @author Gunnar Morling
@@ -208,16 +210,17 @@ public class MethodConstraintViolationException extends ValidationException {
     }
 }</programlisting>
 
-    <para>The <classname>MethodConstraintViolationException</classname>
-    carries a <classname>Set</classname> of
+    <para revisionflag="added">The
+    <classname>MethodConstraintViolationException</classname> carries a
+    <classname>Set</classname> of
     <classname>MethodConstraintViolation</classname>.</para>
 
-    <note>
+    <note revisionflag="changed">
       <para>Bean Validation never raises these exceptions itself. Other
       frameworks like Java Persistence 2 do.</para>
     </note>
 
-    <note>
+    <note revisionflag="changed">
       <para>If these exceptions are meant to be send remotely,
       <classname>ConstraintViolation</classname> respectively
       <classname>MethodConstraintViolation</classname> objects should be
