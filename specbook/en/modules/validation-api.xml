@@ -4138,16 +4138,24 @@ public interface ProviderSpecificBootstrap&lt;T extends Configuration&lt;T&gt;&g
       <section revisionflag="added">
         <title>Java EE and Context and Dependency Injection</title>
 
-        <para>Java EE should obey the rules defined above and enable Context
-        and Dependency Injection (CDI) support to
-        <classname>ValidatorFactory</classname> instances. In
-        particular:</para>
+        <para>In order to adhere to the rules defined above and to provide
+        integration with Context and Dependency Injection (CDI), a Java EE or
+        embeddable EJB container must provide the following services and
+        artifacts:</para>
 
         <itemizedlist>
           <listitem>
-            <para>Let <classname>Validator</classname> and
-            <classname>ValidatorFactory</classname> object be
-            injectable.</para>
+            <para>A built-in bean with bean type
+            <classname>javax.validation.ValidatorFactory</classname> and a
+            built-in bean with bean type
+            <classname>javax.validation.Validator</classname>, allowing
+            injection of the default <classname>ValidatorFactory</classname>
+            and a <classname>Validator</classname> for the default
+            <classname>ValidatorFactory</classname> respectively. Both
+            built-in beans must have the qualifier
+            <classname>@Default</classname>. These beans are passivation
+            capable dependencies, as defined in section 6.6.2 of the CDI
+            specification, “Passivation capable dependencies”.</para>
           </listitem>
 
           <listitem>
@@ -4163,7 +4171,7 @@ public interface ProviderSpecificBootstrap&lt;T extends Configuration&lt;T&gt;&g
             <para>Provide CDI managed instances of
             <classname>ConstraintValidatorFactory</classname>,
             <classname>MessageInterpolator</classname> and
-            <classname>TraversableResovler</classname> if customized classes
+            <classname>TraversableResolver</classname> if customized classes
             are requested in the XML deployment descriptor.</para>
           </listitem>
         </itemizedlist>
